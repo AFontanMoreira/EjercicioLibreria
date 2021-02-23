@@ -1,10 +1,13 @@
 package com.company;
-import  libreria.Visualizar;
+import  libreria.Consola;
+import libreria.Ventana;
 public class Main {
 
     public static void main(String[] args) {
         String mensaje="hola";
-        Visualizar.visualizarConsola(mensaje);
-        Visualizar.visualizarVentana(mensaje);
+        Consola miConsola = new Consola();
+        Ventana miVentana = new Ventana();
+        miConsola.visualizar(mensaje);
+        miVentana.visualizar(mensaje);
     }
 }
